@@ -1,0 +1,13 @@
+{
+  "timestamp": 1737369269.3922033,
+  "problem": "Solve the equation: (x + 3)(x - 2) = 0",
+  "num_sub_questions": 4,
+  "solution_time": 42.910213470458984,
+  "system_confidence": 0.7026551564613246,
+  "user_rating": 1.0,
+  "clarity_rating": 3.0,
+  "helpfulness_rating": 1.0,
+  "recursion_depth": 4,
+  "confidence_accuracy": 1.0,
+  "question_quality": 0.28
+}

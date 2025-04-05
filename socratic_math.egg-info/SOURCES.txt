@@ -1,0 +1,14 @@
+README.md
+setup.py
+socratic_math.egg-info/PKG-INFO
+socratic_math.egg-info/SOURCES.txt
+socratic_math.egg-info/dependency_links.txt
+socratic_math.egg-info/requires.txt
+socratic_math.egg-info/top_level.txt
+src/__init__.py
+src/confidence_calculator.py
+src/data_loader.py
+src/socratic_questioner.py
+src/visualization.py
+tests/test_socratic_questioner.py
+tests/test_validation.py

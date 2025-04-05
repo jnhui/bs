@@ -1,0 +1,22 @@
+{
+  "problems": [
+    {
+      "problem": "Find the derivative of f(x) = x² + 3x + 2",
+      "solution": "Using power rule and constant rule:\nf'(x) = 2x + 3",
+      "subject": "calculus",
+      "level": "basic"
+    },
+    {
+      "problem": "Solve: log₂(x) = 3",
+      "solution": "If log₂(x) = 3\nThen 2³ = x\nTherefore, x = 8",
+      "subject": "algebra",
+      "level": "intermediate"
+    },
+    {
+      "problem": "Find the volume of a cube with side length 4 units.",
+      "solution": "Volume of a cube = s³\nwhere s is the side length\nVolume = 4³ = 64 cubic units",
+      "subject": "geometry",
+      "level": "basic"
+    }
+  ]
+}

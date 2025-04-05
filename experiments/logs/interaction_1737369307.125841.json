@@ -1,0 +1,13 @@
+{
+  "timestamp": 1737369307.125841,
+  "problem": "If 3x + 7 = 22, what is the value of x?",
+  "num_sub_questions": 4,
+  "solution_time": 9.732208728790283,
+  "system_confidence": 0.7526453714853314,
+  "user_rating": 1.0,
+  "clarity_rating": 3.0,
+  "helpfulness_rating": 1.0,
+  "recursion_depth": 4,
+  "confidence_accuracy": 1.0,
+  "question_quality": 0.28
+}

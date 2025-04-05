@@ -1,0 +1,13 @@
+{
+  "timestamp": 1737369333.8220155,
+  "problem": "What is the probability of rolling a sum of 7 with two fair six-sided dice?",
+  "num_sub_questions": 2,
+  "solution_time": 25.05285382270813,
+  "system_confidence": 0.8464488334453257,
+  "user_rating": 1.0,
+  "clarity_rating": 3.0,
+  "helpfulness_rating": 1.0,
+  "recursion_depth": 2,
+  "confidence_accuracy": 1.0,
+  "question_quality": 0.28
+}

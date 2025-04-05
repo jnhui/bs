@@ -1,0 +1,40 @@
+{
+  "overall_performance": {
+    "mean_score": 0.740798489613357,
+    "std_score": 0.021080824637823115,
+    "min_score": 0.7160388821385175,
+    "max_score": 0.7742049469964664
+  },
+  "confidence_stats": {
+    "mean": 0.7828422930559886,
+    "std": 0.078767485139052,
+    "correlation_with_score": 0.7616255663343446,
+    "min_confidence": 0.6552911330779536,
+    "max_confidence": 0.8533525898992771
+  },
+  "decomposition_stats": {
+    "avg_subquestions": 2.6,
+    "max_subquestions": 4,
+    "min_subquestions": 1,
+    "problems_decomposed": 5,
+    "sub_question_performance": {
+      "mean_score": 0.5448781046240667,
+      "mean_confidence": 0.7326800417228264,
+      "avg_improvement": 0.13261529457401156
+    }
+  },
+  "by_subject": {
+    "algebra": {
+      "score": 0.7414386170985495,
+      "confidence": 0.7534175412481323
+    },
+    "geometry": {
+      "score": 0.7407002188183807,
+      "confidence": 0.8533525898992771
+    },
+    "probability": {
+      "score": 0.7389763779527558,
+      "confidence": 0.8006062516362691
+    }
+  }
+}

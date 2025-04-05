@@ -1,0 +1,32 @@
+{
+    "baseline": {
+        "perplexity": 0.3,
+        "coherence": 0.3,
+        "reasoning": 0.2,
+        "consistency": 0.2
+    },
+    "no_perplexity": {
+        "perplexity": 0.0,
+        "coherence": 0.4,
+        "reasoning": 0.3,
+        "consistency": 0.3
+    },
+    "no_coherence": {
+        "perplexity": 0.4,
+        "coherence": 0.0,
+        "reasoning": 0.3,
+        "consistency": 0.3
+    },
+    "no_reasoning": {
+        "perplexity": 0.4,
+        "coherence": 0.3,
+        "reasoning": 0.0,
+        "consistency": 0.3
+    },
+    "no_consistency": {
+        "perplexity": 0.4,
+        "coherence": 0.3,
+        "reasoning": 0.3,
+        "consistency": 0.0
+    }
+}

@@ -1,0 +1,6 @@
+,confidence_mean,confidence_std,problem_count
+baseline,0.775,0.135,2
+no_coherence,0.716,0.083,2
+no_consistency,0.842,0.064,2
+no_perplexity,0.753,0.045,2
+no_reasoning,0.799,0.001,2

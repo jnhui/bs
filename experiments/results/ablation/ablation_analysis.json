@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "baseline": {
+      "confidence_mean": 0.775,
+      "confidence_std": 0.135,
+      "problem_count": 2
+    },
+    "no_coherence": {
+      "confidence_mean": 0.716,
+      "confidence_std": 0.083,
+      "problem_count": 2
+    },
+    "no_consistency": {
+      "confidence_mean": 0.842,
+      "confidence_std": 0.064,
+      "problem_count": 2
+    },
+    "no_perplexity": {
+      "confidence_mean": 0.753,
+      "confidence_std": 0.045,
+      "problem_count": 2
+    },
+    "no_reasoning": {
+      "confidence_mean": 0.799,
+      "confidence_std": 0.001,
+      "problem_count": 2
+    }
+  },
+  "config_means": {
+    "baseline": 0.7754140414481774,
+    "no_perplexity": 0.753204237563083,
+    "no_coherence": 0.7164905553538057,
+    "no_reasoning": 0.7990774867004945,
+    "no_consistency": 0.8423596574936779
+  },
+  "component_impacts": {
+    "perplexity": 0.022209803885094415,
+    "coherence": 0.0589234860943717,
+    "reasoning": -0.023663445252317117,
+    "consistency": -0.06694561604550053
+  }
+}

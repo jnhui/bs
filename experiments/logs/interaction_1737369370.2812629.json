@@ -1,0 +1,13 @@
+{
+  "timestamp": 1737369370.2812629,
+  "problem": "Simplify: (2x\u00b3 + 4x\u00b2 - 6x) \u00f7 2x",
+  "num_sub_questions": 3,
+  "solution_time": 34.76760911941528,
+  "system_confidence": 0.8462070313945469,
+  "user_rating": 1.0,
+  "clarity_rating": 3.0,
+  "helpfulness_rating": 1.0,
+  "recursion_depth": 3,
+  "confidence_accuracy": 1.0,
+  "question_quality": 0.28
+}

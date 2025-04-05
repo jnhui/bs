@@ -1,0 +1,34 @@
+{
+  "problems": [
+    {
+      "problem": "Solve the equation: (x + 3)(x - 2) = 0",
+      "solution": "Using the zero product property:\nEither (x + 3) = 0 or (x - 2) = 0\nSolving each equation:\nx = -3 or x = 2\nTherefore, the solutions are x = -3 and x = 2",
+      "subject": "algebra",
+      "level": "basic"
+    },
+    {
+      "problem": "What is the area of a circle with radius 5 units?",
+      "solution": "Area of a circle = πr²\nSubstituting r = 5:\nArea = π(5)²\nArea = 25π square units",
+      "subject": "geometry",
+      "level": "basic"
+    },
+    {
+      "problem": "If 3x + 7 = 22, what is the value of x?",
+      "solution": "Starting with 3x + 7 = 22\nSubtract 7 from both sides:\n3x = 15\nDivide both sides by 3:\nx = 5",
+      "subject": "algebra",
+      "level": "basic"
+    },
+    {
+      "problem": "What is the probability of rolling a sum of 7 with two fair six-sided dice?",
+      "solution": "Favorable outcomes: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\nTotal possible outcomes: 6 × 6 = 36\nProbability = 6/36 = 1/6",
+      "subject": "probability",
+      "level": "intermediate"
+    },
+    {
+      "problem": "Simplify: (2x³ + 4x² - 6x) ÷ 2x",
+      "solution": "Factor out 2x from numerator:\n2x(x² + 2x - 3) ÷ 2x\nCancel 2x:\nx² + 2x - 3",
+      "subject": "algebra",
+      "level": "intermediate"
+    }
+  ]
+}

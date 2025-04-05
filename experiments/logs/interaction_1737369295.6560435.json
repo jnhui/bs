@@ -1,0 +1,13 @@
+{
+  "timestamp": 1737369295.6560435,
+  "problem": "What is the area of a circle with radius 5 units?",
+  "num_sub_questions": 1,
+  "solution_time": 24.622116327285767,
+  "system_confidence": 0.6633250278819933,
+  "user_rating": 1.0,
+  "clarity_rating": 3.0,
+  "helpfulness_rating": 1.0,
+  "recursion_depth": 1,
+  "confidence_accuracy": 1.0,
+  "question_quality": 0.28
+}

@@ -1,0 +1,12 @@
+{
+  "total_interactions": 5,
+  "mean_quality_score": 0.28,
+  "mean_user_rating": 1.0,
+  "confidence_correlation": NaN,
+  "recursion_analysis": {
+    "mean_recursion_depth": 2.8,
+    "depth_quality_correlation": NaN,
+    "optimal_depth": 1,
+    "quality_improvement": NaN
+  }
+}

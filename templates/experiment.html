@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Problem Solving Experiment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .problem-input {
+            width: 100%;
+            height: 100px;
+            margin: 10px 0;
+        }
+        .solution-display {
+            white-space: pre-wrap;
+            background: #f5f5f5;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .rating-group {
+            margin: 15px 0;
+        }
+        .rating-group label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Math Problem Solving Experiment</h1>
+    
+    <div id="problem-section">
+        <h2>Enter a Math Problem</h2>
+        <textarea id="problem-input" class="problem-input" placeholder="Enter your math problem here..."></textarea>
+        <button onclick="solveProblem()">Solve Problem</button>
+    </div>
+
+    <div id="solution-section" style="display: none;">
+        <h2>Solution</h2>
+        <div id="solution-text" class="solution-display"></div>
+        <div id="confidence-display"></div>
+        
+        <h2>Feedback</h2>
+        <div class="rating-group">
+            <label>Overall Rating (1-5):
+                <input type="number" id="rating" min="1" max="5">
+            </label>
+            
+            <label>Solution Clarity (1-5):
+                <input type="number" id="clarity" min="1" max="5">
+            </label>
+            
+            <label>Helpfulness (1-5):
+                <input type="number" id="helpfulness" min="1" max="5">
+            </label>
+            
+            <label>Confidence Score Accuracy (1-5):
+                <input type="number" id="confidence-accuracy" min="1" max="5">
+            </label>
+            
+            <label>Comments:
+                <textarea id="comments"></textarea>
+            </label>
+        </div>
+        
+        <button onclick="submitFeedback()">Submit Feedback</button>
+        <button onclick="newProblem()">Try Another Problem</button>
+    </div>
+
+    <script>
+        let currentProblem = '';
+        let currentSolution = '';
+        let currentConfidence = 0;
+        
+        async function solveProblem() {
+            const problem = document.getElementById('problem-input').value;
+            currentProblem = problem;
+            
+            const response = await fetch('/solve', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ problem })
+            });
+            
+            const data = await response.json();
+            currentSolution = data.solution;
+            currentConfidence = data.confidence;
+            
+            document.getElementById('solution-text').textContent = data.solution;
+            document.getElementById('confidence-display').textContent = 
+                `System Confidence: ${(data.confidence * 100).toFixed(1)}%`;
+            
+            document.getElementById('solution-section').style.display = 'block';
+        }
+        
+        async function submitFeedback() {
+            const feedback = {
+                problem: currentProblem,
+                solution: currentSolution,
+                system_confidence: currentConfidence,
+                rating: document.getElementById('rating').value,
+                clarity: document.getElementById('clarity').value,
+                helpfulness: document.getElementById('helpfulness').value,
+                confidence_accuracy: document.getElementById('confidence-accuracy').value,
+                comments: document.getElementById('comments').value
+            };
+            
+            await fetch('/feedback', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(feedback)
+            });
+            
+            alert('Thank you for your feedback!');
+        }
+        
+        function newProblem() {
+            document.getElementById('problem-input').value = '';
+            document.getElementById('solution-section').style.display = 'none';
+            document.getElementById('rating').value = '';
+            document.getElementById('clarity').value = '';
+            document.getElementById('helpfulness').value = '';
+            document.getElementById('confidence-accuracy').value = '';
+            document.getElementById('comments').value = '';
+        }
+    </script>
+</body>
+</html>
